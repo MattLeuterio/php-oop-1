@@ -1,0 +1,122 @@
+/* common */
+body {
+    background-color: #24282c;
+    color: #fff;
+}
+
+/* utilities */
+
+
+/* App */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+/* navbar */
+.navbar .row {
+    height: 50px;
+}
+
+.navbar a {
+    width: 110px;
+}
+
+/* SECTION MOVIES */
+
+.movies-ctn {
+    width: 100%;
+
+}
+
+.movie {
+    height: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.movie-cover {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.movie-cover img {
+   width: 120%;
+   opacity: .15;
+}
+
+.movie-info,
+.movie-trailer {
+    z-index: 1;
+}
+
+
+.movie-info {
+    width: 50%;
+    padding: 30px;
+    padding-left: 50px;
+}
+
+.movie-info h4 {
+    font-size: 100%;
+    color: #dc1a28;
+}
+
+.movie-info h2 {
+    font-size: 300%;
+}
+
+.movie-info h3 {
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.movie-info p {
+    width: 60%;
+    font-size: 80%;
+}
+
+
+
+.movie-trailer {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    filter: drop-shadow(1px 1px 5px #333);
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+}
+
+/* footer */
+
+.main-footer {
+    height: 50px;
+    padding: 10px;
+    background-color: #343a40;
+
+}
