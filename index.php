@@ -18,20 +18,13 @@ include_once __DIR__ . '/partials/template/head.php';
             <section class="movies-ctn container-fluid">
 
             <?php // include MOVIE CLASS
-            include __DIR__ . '/partials/classes/movie.php';
+                include __DIR__ . '/partials/classes/movie.php';
+                include __DIR__ . '/partials/movie-collection.php';
             ?>
 
                 <div class="movie row position-relative d-flex align-items-center">
                     <div class="movie-info">
-                        <h4><?php echo $movie_1->format; ?></h4>
-                        <h2><?php echo $movie_1->title; ?></h2>
-                        <h3>
-                          <span><?php echo $movie_1->genre; ?> -</span> 
-                          <span><?php echo $movie_1->director; ?></span> 
-                        </h3>
-                        <p>
-                            <?php echo $movie_1->summary; ?>
-                        </p>
+                        <?php echo $movie_1->printMovieInfo(); ?>
                     </div>
                     <div class="movie-trailer">
                         <div class="iframe-container">
@@ -47,15 +40,7 @@ include_once __DIR__ . '/partials/template/head.php';
 
                 <div class="movie row position-relative d-flex align-items-center">
                     <div class="movie-info">
-                        <h4><?php echo $movie_2->format; ?></h4>
-                        <h2><?php echo $movie_2->title; ?></h2>
-                        <h3>
-                          <span><?php echo $movie_2->genre; ?> -</span> 
-                          <span><?php echo $movie_2->director; ?></span> 
-                        </h3>
-                        <p>
-                            <?php echo $movie_2->summary; ?>
-                        </p>
+                        <?php echo $movie_2->printMovieInfo(); ?>
                     </div>
                     <div class="movie-trailer">
                         <div class="iframe-container">
@@ -70,15 +55,7 @@ include_once __DIR__ . '/partials/template/head.php';
                 </div>
                 <div class="movie row position-relative d-flex align-items-center">
                     <div class="movie-info">
-                        <h4><?php echo $movie_3->format; ?></h4>
-                        <h2><?php echo $movie_3->title; ?></h2>
-                        <h3>
-                          <span><?php echo $movie_3->genre; ?> -</span> 
-                          <span><?php echo $movie_3->director; ?></span> 
-                        </h3>
-                        <p>
-                            <?php echo $movie_3->summary; ?>
-                        </p>
+                        <?php echo $movie_3->printMovieInfo(); ?>
                     </div>
                     <div class="movie-trailer">
                         <div class="iframe-container">
